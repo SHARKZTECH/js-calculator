@@ -5,11 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-    <div class="color">
+	<section>
 	<div class="cal">
-	<form>
+		<div>
 		<input type="textarea" id="display" name="textview" >
+	    </div>
+
+		<div>
 	
 		<table>
 			<tr>
@@ -42,16 +44,17 @@
 			</tr>
 			<tr>
 				
-				<td><input class="button" type="button" value="0" onclick="insert('0')"></td>
+				<td><input class="button zero" type="button" value="0" onclick="insert('0')"></td>
 				<td><input class="button" type="button" value="." onclick="insert('.')"></td>				
-				<td><input class="button" type="button" value="=" onclick="equal()"></td>
+				<td><input class="button equal" type="button" value="=" onclick="equal()"></td>
 			</tr>
 				
 			</tr>
 		</table>
-	</form>
+	</div>	
 	</div>
-</div>
+	</section>
+
 <script type="text/javascript">
 var display=document.getElementById("display");
 
